@@ -259,6 +259,19 @@ section{
 .btn:hover ion-icon{
   color: #333;
 }
+.btn-up{
+  position: relative;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  background: #dbb76f;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
 .input-number{
   text-align: center;
   border: none;
