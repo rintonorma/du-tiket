@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Dewa United - Loket Tiket</title>
+
+  <link rel="icon" type="image/ico" href="assets/img/favicon.ico"/>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <section class="header-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-2 col-md-1">
+            <a href="./index.html" class="d-flex align-items-center">
+              <ion-icon name="arrow-back" style="width:24px;height:24px;"></ion-icon>
+            </a>
+          </div>
+          <div class="col-10 col-md-11">
+            <h5 class="m-0">Keranjang Belanja</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="cart-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="fw-normal mt-2 pb-2">SEPAKBOLA</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" class="d-flex align-items-center gap-3"  data-bs-toggle="modal" data-bs-target="#addToCartModal">
+                <div class="ratio ratio-1x1 img-thumb">
+                  <img src="assets/img/main_banner_2.png" alt="" class="img-fluid object-cover" />
+                </div>
+                <div>
+                  <p class="fw-normal">Tiket Tribun VIP</p>
+                  <p class="text-black fw-bold">Rp150.000</p>
+                  <div class="p-0 w-100 m-auto mt-2">
+                    <div class="input-group gap-2">
+                      <span class="input-group-btn ml-auto">
+                        <button type="button" class="btn btn-default btn-number bg-transparent" data-type="remove" data-field="quant[0]">
+                          <ion-icon name="trash"></ion-icon>
+                        </button>
+                      </span>
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
+                          <ion-icon name="remove"></ion-icon>
+                        </button>
+                      </span>
+                      <input type="text" name="quant[1]" class="form-control input-number" value="2" min="1" max="10">
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <ion-icon name="add"></ion-icon>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" class="d-flex align-items-center gap-3"  data-bs-toggle="modal" data-bs-target="#addToCartModal">
+                <div class="ratio ratio-1x1 img-thumb">
+                  <img src="assets/img/main_banner_2.png" alt="" class="img-fluid object-cover" />
+                </div>
+                <div>
+                  <p class="fw-normal">Tiket Tribun Timur</p>
+                  <p class="text-black fw-bold">Rp75.000</p>
+                  <div class="p-0 w-100 m-auto mt-2">
+                    <div class="input-group gap-2">
+                      <span class="input-group-btn ml-auto">
+                        <button type="button" class="btn btn-default btn-number bg-transparent" data-type="remove" data-field="quant[0]">
+                          <ion-icon name="trash"></ion-icon>
+                        </button>
+                      </span>
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
+                          <ion-icon name="remove"></ion-icon>
+                        </button>
+                      </span>
+                      <input type="text" name="quant[1]" class="form-control input-number" value="5" min="1" max="10">
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <ion-icon name="add"></ion-icon>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <p class="fw-normal mt-2 pb-2">E-SPORT</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" class="d-flex align-items-center gap-3"  data-bs-toggle="modal" data-bs-target="#addToCartModal">
+                <div class="ratio ratio-1x1 img-thumb">
+                  <img src="assets/img/main_banner_2.png" alt="" class="img-fluid object-cover" />
+                </div>
+                <div>
+                  <p class="fw-normal">Tiket Tribun VIP</p>
+                  <p class="text-black fw-bold">Rp150.000</p>
+                  <div class="p-0 w-100 m-auto mt-2">
+                    <div class="input-group gap-2">
+                      <span class="input-group-btn ml-auto">
+                        <button type="button" class="btn btn-default btn-number bg-transparent" data-type="remove" data-field="quant[0]">
+                          <ion-icon name="trash"></ion-icon>
+                        </button>
+                      </span>
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
+                          <ion-icon name="remove"></ion-icon>
+                        </button>
+                      </span>
+                      <input type="text" name="quant[1]" class="form-control input-number" value="3" min="1" max="10">
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <ion-icon name="add"></ion-icon>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subtotal-section">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="">
+            <p>Subtotal</p>
+            <h5>Rp1.125.000</h5>
+          </div>
+          <div class="">
+            <a href="#" class="btn btn-primary btn-lg rounded-pill" onclick="confirmModal()">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="assets/js/slick.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="assets/js/script.js"></script>  
+</body>
+</html>

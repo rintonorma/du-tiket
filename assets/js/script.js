@@ -98,3 +98,45 @@ function successModal() {
       title: 'Berhasil ditambahkan ke keranjang'
     })
 }
+
+function confirmModal() {
+    Swal.fire({
+      title: 'Konfirmasi',
+      text: "Apakah anda yakin ingin melanjutkan proses pembayaran?",
+      // icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#dbb76f',
+      cancelButtonColor: '#ccc',
+      confirmButtonText: 'Lanjutkan',
+      cancelButtonText: 'Batal'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = `./register-form.html`
+      }
+    })
+}
+
+function cancelModal() {
+    Swal.fire({
+      title: 'Batalkan Pemesanan',
+      text: "Apakah anda yakin ingin membatalkan pemesanan?",
+      // icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#dbb76f',
+      cancelButtonColor: '#ccc',
+      confirmButtonText: 'Batalkan',
+      cancelButtonText: 'Kembali'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = `./index.html`
+      }
+    })
+}
+
+function submitCustomer() {
+    window.location.href = `./checkout.html`
+}
+
+function completePayment() {
+    window.location.href = `./index.html`
+}
