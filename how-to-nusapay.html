@@ -43,75 +43,22 @@
               <p class="m-0 fw-bold">TRX129783918273</p>
             </div>
             <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
-              <p class="text-secondary fw-normal">BANK MANDIRI</p>
-              <img src="assets/img/logo-mandiri.png" alt="" class="img-fluid" width="100">
+              <p class="text-secondary fw-normal">Nusapay</p>
+              <img src="assets/img/nusapay-logo.png" alt="" class="img-fluid" width="100">
             </div>
             <div class="d-flex flex-column py-3 border-bottom gap-2">
-              <p class="text-secondary fw-normal">No. Virtual Account</p>
-              <div class="d-flex align-items-center justify-content-between">
-                <h3 class="m-0">800030813838383838</h3>
-                <a href="#" class="btn btn-outline-primary">Salin</a>
-              </div>
+              <label for="inputPhone" class="text-secondary form-label m-0">Masukkan No. Handphone</label>
+              <input type="number" class="form-control form-control-lg" id="inputPhone" placeholder="081234567890" required>
             </div>
             <div class="py-3 border-bottom gap-2">
               <div class="accordion" id="accordionHowTo">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Petunjuk Transfer ATM
+                      Petunjuk Pembayaran
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionHowTo">
-                    <div class="accordion-body">
-                      <ul class="list-howto">
-                        <li>
-                          <div class="list-number">1</div>
-                          <div>Pilih Transaksi Lainnya > Transfer > Ke Rek BCA Virtual Account.</div>
-                        </li>
-                        <li>
-                          <div class="list-number">2</div>
-                          <div>Masukan nomor Virtual Account <b>800030813838383838</b> dan pilih benar.</div>
-                        </li>
-                        <li>
-                          <div class="list-number">3</div>
-                          <div>Periksa Informasi yang tertera di layar. Pastikan Merchant adalah Shopee, Total tagihan sudah benar dan username kamu. Jika benar, pilih ya</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Petunjuk Transfer IBanking
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionHowTo">
-                    <div class="accordion-body">
-                      <ul class="list-howto">
-                        <li>
-                          <div class="list-number">1</div>
-                          <div>Pilih Transaksi Lainnya > Transfer > Ke Rek BCA Virtual Account.</div>
-                        </li>
-                        <li>
-                          <div class="list-number">2</div>
-                          <div>Masukan nomor Virtual Account <b>800030813838383838</b> dan pilih benar.</div>
-                        </li>
-                        <li>
-                          <div class="list-number">3</div>
-                          <div>Periksa Informasi yang tertera di layar. Pastikan Merchant adalah Shopee, Total tagihan sudah benar dan username kamu. Jika benar, pilih ya</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Petunjuk Transfer mBanking
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionHowTo">
                     <div class="accordion-body">
                       <ul class="list-howto">
                         <li>
@@ -138,7 +85,7 @@
           <div class="col-12">
             <div class="d-flex flex-column gap-2 py-3">
               <button type="cancel" class="btn btn-light btn-lg w-100" onclick="submitCustomer()">Ubah Metode Pembayaran</button>
-              <button type="submit" class="btn btn-primary btn-lg w-100 mb-2" onclick="completePayment()">OK</button>
+              <button type="submit" class="btn btn-primary btn-lg w-100 mb-2" onclick="successPage()">Bayar Sekarang</button>
             </div>
           </div>
         </div>

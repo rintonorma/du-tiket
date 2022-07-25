@@ -140,3 +140,17 @@ function submitCustomer() {
 function completePayment() {
     window.location.href = `./index.html`
 }
+
+function successPage() {
+    window.location.href = `./success-page.html`
+}
+
+function payNow() {
+    window.location.href = `./cart.html`
+}
+
+
+
+
+
+

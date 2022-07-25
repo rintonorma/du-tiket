@@ -22,7 +22,7 @@ html, body {
 }
 body {
   font-family: sans-serif;
-  background: #333;
+  background: #f5f5f5;
   transition: all ease .5s;
   color: #000;
 }
@@ -243,6 +243,10 @@ section{
   border: 1px solid #dbb76f;
   color: #000;
 }
+.btn-light{
+  background: #ccc;
+  border: 1px solid #ccc;
+}
 .btn.disabled, .btn:disabled, fieldset:disabled .btn{
   background: #ccc;
   border-color: #ccc;
@@ -362,6 +366,9 @@ section{
   border: none;
   border-bottom: 1px solid #dee2e6;
 }
+.accordion-item:last-child{
+  border-bottom: none;
+}
 .accordion-button{
   padding: 1rem 0;
 }
@@ -394,6 +401,13 @@ section{
 }
 .howto-section .container{
   padding: 5rem 1rem;
+}
+.success-section .container{
+  height: 100vh;
+  padding: 5rem 1rem;
+}
+.success-img{
+  text-align: center;
 }
 @media (min-width: 767px){
     .container{
