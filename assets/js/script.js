@@ -99,6 +99,26 @@ function successModal() {
     })
 }
 
+function sendToEmail() {
+    // const Toast = Swal.mixin({
+    //   toast: true,
+    //   position: 'top-end',
+    //   showConfirmButton: false,
+    //   timer: 3000,
+    //   timerProgressBar: true,
+    //   didOpen: (toast) => {
+    //     toast.addEventListener('mouseenter', Swal.stopTimer)
+    //     toast.addEventListener('mouseleave', Swal.resumeTimer)
+    //   }
+    // })
+
+    // Toast.fire({
+    //   icon: 'success',
+    //   title: 'Tiket akan dikirim ke email anda!'
+    // })
+    window.location.href = `./index.html`
+}
+
 function confirmModal() {
     Swal.fire({
       title: 'Konfirmasi',
@@ -112,6 +132,40 @@ function confirmModal() {
     }).then((result) => {
       if (result.isConfirmed) {
         window.location.href = `./register-form.html`
+      }
+    })
+}
+
+function confirmPayment() {
+    Swal.fire({
+      title: 'Konfirmasi',
+      text: "Apakah anda yakin bayar dengan Virtual Account BCA? Anda tidak dapat mengubah layanan nanti",
+      // icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#dbb76f',
+      cancelButtonColor: '#ccc',
+      confirmButtonText: 'Lanjutkan',
+      cancelButtonText: 'Batal'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = `./how-to-pay.html`
+      }
+    })
+}
+
+function confirmPaymentNusapay() {
+    Swal.fire({
+      title: 'Konfirmasi',
+      text: "Apakah anda yakin bayar dengan Nusapay? Anda tidak dapat mengubah layanan nanti",
+      // icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#dbb76f',
+      cancelButtonColor: '#ccc',
+      confirmButtonText: 'Lanjutkan',
+      cancelButtonText: 'Batal'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = `./how-to-nusapay.html`
       }
     })
 }
