@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Dewa United - Loket Tiket</title>
+
+  <link rel="icon" type="image/ico" href="assets/img/favicon.ico"/>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+  <main>
+    <section class="success-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="w-75 m-auto text-center">
+              <img src="assets/img/du-logo-universal.png" alt="dewa united" width="200">
+              <h3 class="my-5">Admin Loket Tiket</h3>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="w-75 m-auto">
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email" required>
+                </div>
+                <div class="mb-3 position-relative">
+                  <button type="button" class="position-absolute end-0 bg-transparent d-flex align-items-center h-100 toggle-password" toggle="#inputPassword">
+                    <img src="assets/img/icon-eye.svg" alt="" />
+                  </button>
+                  <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100 mb-2" onclick="loginAdmin()">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fixed-bottom text-center">
+    <section>
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-center">
+          <small class="text-secondary">&copy; Copyright Dewa United.</small>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="assets/js/slick.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="assets/js/script.js"></script>  
+</body>
+</html>

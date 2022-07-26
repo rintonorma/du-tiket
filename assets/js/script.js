@@ -78,6 +78,17 @@ $(document).ready(function () {
     $('#btnPay').addClass('show');
   });
 
+  $(".toggle-password").click(function() {
+
+    $(this).toggleClass("fa-eye fa-eye-slash");
+    var input = $($(this).attr("toggle"));
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
+    } else {
+      input.attr("type", "password");
+    }
+  });
+
 });
 
 function successModal() {
@@ -100,22 +111,6 @@ function successModal() {
 }
 
 function sendToEmail() {
-    // const Toast = Swal.mixin({
-    //   toast: true,
-    //   position: 'top-end',
-    //   showConfirmButton: false,
-    //   timer: 3000,
-    //   timerProgressBar: true,
-    //   didOpen: (toast) => {
-    //     toast.addEventListener('mouseenter', Swal.stopTimer)
-    //     toast.addEventListener('mouseleave', Swal.resumeTimer)
-    //   }
-    // })
-
-    // Toast.fire({
-    //   icon: 'success',
-    //   title: 'Tiket akan dikirim ke email anda!'
-    // })
     window.location.href = `./index.html`
 }
 
@@ -203,6 +198,16 @@ function payNow() {
     window.location.href = `./cart.html`
 }
 
+function loginAdmin() {
+    window.location.href = `./scan-barcode.html`
+}
+
+function onScanSuccess(decodedText, decodedResult) {
+    console.log(`Code scanned = ${decodedText}`, decodedResult);
+}
+var html5QrcodeScanner = new Html5QrcodeScanner(
+  "qr-reader", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess);
 
 
 
