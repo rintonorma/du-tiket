@@ -427,7 +427,7 @@ section{
   display: none;
 }
 #qr-reader__scan_region{
-  min-height: 400px!important;
+  min-height: 350px!important;
   max-height: 100%;
   display: flex;
   align-items: center;
@@ -438,7 +438,7 @@ section{
 #qr-reader__dashboard_section{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   padding: 0!important;
   margin-top: 2rem;
 }
@@ -458,6 +458,15 @@ section{
   padding: 1rem;
   border-radius: 1rem;
 }
+#qr-reader__camera_selection{
+  border: none;
+  padding: 0.5rem;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+#qr-shaded-region{
+  margin: 2.3rem 0;
+}
 .divider-vertical{
   content: '';
   width: 1px;
@@ -470,6 +479,20 @@ section{
   display: flex;
   justify-content: center;
   flex: 1;
+}
+.nav-bottom.active{
+  color: #dbb76f;
+}
+.history-section .container{
+  height: 100vh;
+  padding: 5rem 1rem;
+}
+.history-section ul{
+  list-style: none;
+}
+.history-section ul li{
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
 }
 @media (min-width: 767px){
     .container{

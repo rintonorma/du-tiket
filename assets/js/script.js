@@ -182,6 +182,23 @@ function cancelModal() {
     })
 }
 
+function submitQR() {
+    Swal.fire({
+      title: 'Telah Diklaim',
+      text: "Tiket #1 Tribun VIP Dewa United VS PERSITA",
+      // icon: 'warning',
+      showCancelButton: false,
+      confirmButtonColor: '#dbb76f',
+      cancelButtonColor: '#ccc',
+      confirmButtonText: 'OK',
+      cancelButtonText: 'Batal'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = `./scan-barcode.html`
+      }
+    })
+}
+
 function submitCustomer() {
     window.location.href = `./checkout.html`
 }
