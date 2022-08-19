@@ -10,6 +10,7 @@
   <link rel="icon" type="image/ico" href="assets/img/favicon.ico"/>
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
             </a>
           </div>
           <div class="col-10 col-md-11">
-            <h5 class="m-0">Isi Data Pelanggan</h5>
+            <h5 class="m-0">Isi Data Tiket</h5>
           </div>
         </div>
       </div>
@@ -34,20 +35,31 @@
       <div class="container">
         <div class="row">
           <form>
-            <div class="mb-3">
-              <label for="inputName" class="form-label">Nama</label>
-              <input type="text" class="form-control form-control-lg" id="inputName" required>
-            </div>
-            <div class="mb-3">
-              <label for="inputEmail" class="form-label">Email</label>
-              <input type="email" class="form-control form-control-lg" id="inputEmail" required>
-            </div>
-            <div class="mb-3">
-              <label for="inputPhone" class="form-label">No. Handphone</label>
-              <input type="number" class="form-control form-control-lg" id="inputPhone" required>
-            </div>
-            <div class="mb-3">
-              <p>Tagihan dan tiket akan dikirim ke Email dan No. Handphone</p>
+            <div class="form-group">
+              <div class="d-flex gap-2 position-relative align-items-center">
+                <div id="display-image"></div>
+                <input type="file" id="image-input" class="form-control form-control-lg" accept="image/jpeg, image/png, image/jpg" hidden>
+                <div class="btn-upload">
+                  <label for="image-input" class="btn btn-light btn-lg"><img src="assets/img/img-identity.png" alt="" width="24"> Unggah KTP</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="inputId" class="form-label">No Identitas</label>
+                <input type="number" class="form-control form-control-lg" id="inputId" required>
+              </div>
+              <div class="mb-3">
+                <label for="inputAddress" class="form-label">Alamat Domisili</label>
+                <input type="text" class="form-control form-control-lg" id="inputAddress" required>
+              </div>
+              <div class="mb-3">
+                <label for="inputCity" class="form-label">Kota/Kabupaten</label>
+                <select id="inputCity" class="form-control form-control-lg">
+                  <option>Bali</option>
+                  <option>Banten</option>
+                  <option>DKI Jakarta</option>
+                  <option>Jawa Barat</option>
+                </select>
+              </div>
             </div>
             <button type="submit" class="btn btn-primary btn-lg w-100 mb-2" onclick="submitCustomer()">Lanjutkan</button>
             <!-- <button type="cancel" class="btn btn-light btn-lg w-100" onclick="cancelModal()">Batalkan Pesanan</button> -->
@@ -63,6 +75,7 @@
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
   <script defer src="assets/js/slick.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   <script defer src="assets/js/script.js"></script>  
 </body>
 </html>

@@ -118,6 +118,55 @@ section{
   left: 0;
   right: 0;
 }
+.page-section .container{
+  margin-top: -5rem;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+.page-section:before{
+  /*content: '';*/
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+  width: 100%;
+  max-width: 800px;
+  height: 50px;
+  border-radius: 20px 20px 0 0;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+.warning-section .container{
+  background: #ededed;
+}
+.warning-section ol{
+  padding-left: 1rem;
+}
+.mapouter{
+  position:relative;
+  text-align:right;
+  width:100%;
+  height:250px;
+  margin-bottom: 10rem;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  width:100%;
+  height:250px;
+}
+.gmap_iframe {
+  height:250px!important;
+}
 .sticky-top .container{
   border-bottom: 1px solid #ededed;
 }
@@ -215,6 +264,25 @@ section{
 .btn-pay.show{
   display: block;
 }
+.btn-order{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.btn-order a{
+  background: #dbb76f;
+  border: 1px solid #dbb76f;
+  color: #000;
+  border-radius: 2rem;
+  width: 100%;
+  padding: 1rem 2rem;
+}
 .btn-close{
   padding: 1rem!important;
   margin: 0!important;
@@ -276,6 +344,90 @@ section{
   justify-content: center;
   border-radius: 50px;
 }
+.title-border{
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: 1px solid #dab66f;
+  border-bottom: 1px solid #dab66f;
+  padding: 1rem 2rem;
+}
+.ticket-category li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ticket-category .cart-item{
+  width: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap:  1rem;
+}
+.match-banner{
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+  border-radius: 4rem;
+  display: flex;
+}
+.match-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /*position: absolute;*/
+}
+.match-logo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.match-logo img{
+  height: 70px;
+}
+.match-schedule{
+  color: #dab66f;
+}
+.match-versus h2{
+  font-size: 3rem;
+  margin: 0;
+}
+.match-bg{
+  display: flex;
+  border-radius: 5rem;
+}
+.match-bg img{
+  width: 100%;
+}
+.match-category{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mc-item{
+  display: flex;
+  color: #000;
+  justify-content: space-between;
+  border-radius: 2rem;
+  background: #dab66f;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.mc-item .mc-title{
+  background: #000;
+  color: #fff;
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+  width: 60%;
+}
+.mc-item .mc-price{
+  padding: .5rem 2rem;
+  width: 40%;
+  text-align: right;
+}
 .input-number{
   text-align: center;
   border: none;
@@ -287,6 +439,9 @@ section{
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
+}
+.content-section{
+  overflow: hidden;
 }
 .content-section .list-group-item{
   padding: 1rem 0;
@@ -494,6 +649,48 @@ section{
   padding: 1rem 0;
   border-bottom: 1px solid #ddd;
 }
+#display-image{
+  width: 150px;
+  height: 100px;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-upload{
+
+}
+.select2-selection__rendered{
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  min-height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+}
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    height: 100%;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+  height: 100%;
+}
 @media (min-width: 767px){
     .container{
         max-width: 800px;
@@ -507,6 +704,49 @@ section{
         max-width: 800px;
         background: #fff;
         padding: 1rem;
+    }
+    .dropdown-section .nav-fill{
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    .dropdown-section .nav-fill .nav-item{
+      flex-shrink: 0;
+    }
+    .dropdown-section .nav-fill .nav-item a{
+      font-size: .75rem;
+    }
+    .ticket-category li{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .ticket-category .cart-item{
+      width: 100%;
+      justify-content: space-between;
+    }
+    .match-logo img{
+      height: 50px;
+    }
+    .match-schedule p{
+      font-size: .75rem;
+    }
+    .match-versus h2 {
+      font-size: 1.5rem;
+    }
+    .match-banner {
+      border-radius: 2rem;
+      display: flex;
+      background-size: 200%!important;
+      background-position-x: -17rem!important;
+    }
+    .mc-item .mc-title{
+      font-size: 1rem;
+      width: 60%;
+      padding-right: 0;
+    }
+     .mc-item .mc-price{
+      font-size: 1rem;
+      width: 40%;
+      padding-left: 0;
     }
 }
 
