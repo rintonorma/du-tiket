@@ -218,7 +218,15 @@ function submitQR() {
 }
 
 function submitCustomer() {
-    window.location.href = `./identity-form.html`
+    window.location.href = `./identity-list.html`
+}
+
+function submitTicket() {
+    window.location.href = `./checkout.html`
+}
+
+function saveTicket() {
+    window.location.href = `./identity-list.html`
 }
 
 function completePayment() {
