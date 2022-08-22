@@ -500,6 +500,19 @@ section{
 .form-control:focus{
   border: 1px solid #dbb86f;
 }
+.ticket-section .container{
+  height: 100vh;
+  padding: 5rem 1rem;
+}
+.ticket-section .list-group-item{
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.ticket-section .list-group-item ion-icon{
+  color: #555;
+  font-size: 1rem;
+}
 .total-section .container{
   padding: 5rem 1rem 1rem;
 }
