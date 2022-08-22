@@ -2,10 +2,7 @@ $(document).ready(function () {
   $('.dropdown-menu a').click(function(){
     $('#selected').text($(this).text());
   });
-  $("#inputCity").select2({
-      placeholder: "Pilih salah satu",
-      allowClear: true
-  });
+  
   $('.btn-number').click(function(e){
       e.preventDefault();
       
@@ -91,6 +88,11 @@ $(document).ready(function () {
     } else {
       input.attr("type", "password");
     }
+  });
+
+  $("#inputCity").select2({
+      placeholder: "Pilih salah satu",
+      allowClear: true
   });
 
   const image_input = document.querySelector("#image-input");
