@@ -85,18 +85,18 @@
         <div class="d-flex align-items-center justify-content-between gap-3">
           <a href="#" class="btn btn-light btn-lg rounded-pill w-50" onclick="cancelModal()">Batalkan</a>
           <!-- <a href="#" class="btn btn-primary btn-lg rounded-pill w-50" onclick="confirmModal()">Checkout</a> -->
-          <button type="button" class="btn btn-primary btn-lg rounded-pill w-50" data-bs-toggle="modal" data-bs-target="#exampleModal">Checkout</button>
+          <button type="button" class="btn btn-primary btn-lg rounded-pill w-50" data-bs-toggle="modal" data-bs-target="#loginModal">Checkout</button>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Member Area</h5>
+          <h5 class="modal-title" id="loginModalLabel">Member Area</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -120,12 +120,49 @@
               </div>
             </div>
             <div class="mb-3">
-              <a href="#" class="text-primary">Lupa kata sandi?</a>
+              <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#forgetModal">Lupa kata sandi?</a>
             </div>
             <button type="submit" class="btn btn-primary btn-lg w-100 mb-2" onclick="successLogin()" data-bs-dismiss="modal" aria-label="Close">Masuk</button>
             
             <div class="mb-3 text-center">
               <a href="#" class="btn btn-lg w-100">Belum punya akun? Daftar disini</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="forgetModal" tabindex="-1" aria-labelledby="forgetModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="forgetModalLabel">Lupa Kata Sandi</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Email</label>
+              <div class="position-relative">
+                <div class="position-absolute h-100 p-3 d-flex align-items-center justify-content-center">
+                  <ion-icon name="mail" style="font-size: 18px;color: gray"></ion-icon>
+                </div>
+                <input type="email" class="form-control form-control-lg px-5" id="inputEmail" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Saya sudah ingat</a>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg w-100 mb-2" onclick="successForget()" data-bs-dismiss="modal" aria-label="Close">Kirim</button>
+            
+            <div class="mb-3 alert alert-danger">
+              <h5>PERHATIAN!</h5>
+              <ul class="ps-3">
+                <li>Masukkan alamat email yang kamu gunakan untuk mendaftar.</li>
+                <li>Pastikan alamat email yang kamu masukkan merupakan email yang aktif.</li>
+              </ul>
             </div>
           </form>
         </div>
