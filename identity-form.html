@@ -37,20 +37,24 @@
           <h2>Tiket Tribun VIP #1</h2>
           <form>
             <div class="form-group">
-              <div class="d-flex gap-2 position-relative align-items-center">
+              <!-- <div class="d-flex gap-2 position-relative align-items-center">
                 <div id="display-image"></div>
                 <input type="file" id="image-input" class="form-control form-control-lg" accept="image/jpeg, image/png, image/jpg" hidden>
                 <div class="btn-upload">
                   <label for="image-input" class="btn btn-light btn-lg"><img src="assets/img/img-identity.png" alt="" width="24"> Unggah KTP</label>
                 </div>
+              </div> -->
+              <div class="mb-3">
+                <label for="inputType" class="form-label">Tipe Indentitas</label>
+                <select id="inputType" class="form-select form-select-lg">
+                  <option>KTP</option>
+                  <option>Paspor</option>
+                  <option>SIM</option>
+                </select>
               </div>
               <div class="mb-3">
                 <label for="inputId" class="form-label">No Identitas</label>
                 <input type="number" class="form-control form-control-lg" id="inputId" required>
-              </div>
-              <div class="mb-3">
-                <label for="inputAddress" class="form-label">Alamat Domisili</label>
-                <input type="text" class="form-control form-control-lg" id="inputAddress" required>
               </div>
               <div class="mb-3">
                 <label for="inputCity" class="form-label">Kota/Kabupaten</label>
@@ -60,6 +64,10 @@
                   <option>DKI Jakarta</option>
                   <option>Jawa Barat</option>
                 </select>
+              </div>
+              <div class="mb-3">
+                <label for="inputAddress" class="form-label">Alamat Domisili</label>
+                <input type="text" class="form-control form-control-lg" id="inputAddress" required>
               </div>
             </div>
             <button type="submit" class="btn btn-primary btn-lg w-100 mb-2" onclick="saveTicket()">Simpan</button>
