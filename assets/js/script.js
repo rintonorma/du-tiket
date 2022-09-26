@@ -287,6 +287,22 @@ function loginAdmin() {
 
 function onScanSuccess(decodedText, decodedResult) {
     console.log(`Code scanned = ${decodedText}`, decodedResult);
+    Swal.fire({
+      title: 'Dewa United VS PERSITA',
+      html:
+        '<h5>Jono Dohn</h5>, ' +
+        'Tiket Tribun Timur #1 ',
+      // icon: 'warning',
+      showCancelButton: false,
+      confirmButtonColor: '#dbb76f',
+      cancelButtonColor: '#ccc',
+      confirmButtonText: 'OK',
+      cancelButtonText: 'Batal'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = `./scan-barcode.html`
+      }
+    })
 }
 var html5QrcodeScanner = new Html5QrcodeScanner(
   "qr-reader", { fps: 10, qrbox: 250 });
