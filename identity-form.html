@@ -46,7 +46,7 @@
               </div> -->
               <div class="mb-3">
                 <label for="inputType" class="form-label">Tipe Indentitas</label>
-                <select id="inputType" class="form-select form-select-lg">
+                <select id="inputType" class="form-select form-select-lg" required>
                   <option>KTP</option>
                   <option>Paspor</option>
                   <option>SIM</option>
@@ -54,11 +54,12 @@
               </div>
               <div class="mb-3">
                 <label for="inputId" class="form-label">No Identitas</label>
-                <input type="number" class="form-control form-control-lg" id="inputId" required>
+                <input type="number" class="form-control form-control-lg" id="inputId" minlength="16" required>
+                <small class="text-secondary">Nomor harus sesuai dengan identitas</small>
               </div>
               <div class="mb-3">
                 <label for="inputCity" class="form-label">Kota/Kabupaten</label>
-                <select id="inputCity" class="form-control form-control-lg">
+                <select id="inputCity" class="form-control form-control-lg" required>
                   <option>Bali</option>
                   <option>Banten</option>
                   <option>DKI Jakarta</option>
