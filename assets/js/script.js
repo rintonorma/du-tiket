@@ -290,7 +290,7 @@ function onScanSuccess(decodedText, decodedResult) {
     Swal.fire({
       title: 'Dewa United VS PERSITA',
       html:
-        '<h5>Jono Dohn</h5>, ' +
+        '<h5>Jono Dohn</h5>,  ' +
         'Tiket Tribun Timur #1 ',
       // icon: 'warning',
       showCancelButton: false,
