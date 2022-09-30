@@ -290,13 +290,13 @@ function onScanSuccess(decodedText, decodedResult) {
     Swal.fire({
       title: 'Dewa United VS PERSITA',
       html:
-        '<h5>Jono Dohn</h5>,  ' +
-        'Tiket Tribun Timur #1 ',
+        '<h5>Jono Dohn</h5>' +
+        '<p>Tiket Tribun Timur #1</p> ',
       // icon: 'warning',
-      showCancelButton: false,
+      showCancelButton: true,
       confirmButtonColor: '#dbb76f',
       cancelButtonColor: '#ccc',
-      confirmButtonText: 'OK',
+      confirmButtonText: 'Klaim',
       cancelButtonText: 'Batal'
     }).then((result) => {
       if (result.isConfirmed) {

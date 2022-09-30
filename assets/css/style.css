@@ -588,8 +588,8 @@ section{
   color: #fff;
 }
 #qr-reader{
-  height: 600px;
-  max-height: 100vh;
+  height: auto;
+  max-height: auto;
   border: none!important;
 }
 #qr-reader > div > span > a {
@@ -610,9 +610,9 @@ section{
 #qr-reader__dashboard_section{
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: .5rem;
   padding: 0!important;
-  margin-top: 2rem;
+  margin: 1rem 0;
 }
 #qr-reader__dashboard_section_csr button{
   background: #dbb76f;
@@ -629,6 +629,7 @@ section{
   text-decoration: none!important;
   padding: 1rem;
   border-radius: 1rem;
+  display: inline-block;
 }
 #qr-reader__camera_selection{
   border: none;
@@ -637,7 +638,7 @@ section{
   margin-bottom: 5px;
 }
 #qr-shaded-region{
-  margin: 2.3rem 0;
+  /*margin: 2.3rem 0;*/
 }
 .divider-vertical{
   content: '';
@@ -764,6 +765,9 @@ section{
       font-size: 1rem;
       width: 40%;
       padding-left: 0;
+    }
+    #qr-shaded-region{
+      margin: 2.3rem 0;
     }
 }
 
