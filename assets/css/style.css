@@ -581,6 +581,9 @@ section{
 .success-img{
   text-align: center;
 }
+.scan-section{
+  padding-bottom: 4rem;
+}
 .scan-section .container{
   height: 100vh;
   padding: 5rem 1rem;
@@ -619,23 +622,29 @@ section{
   border: 1px solid #dbb76f;
   color: #000;
   border: none;
-  padding: 1rem;
+  padding: .5rem 1rem;
   border-radius: 1rem;
+  font-size: 12px;
 }
 #qr-reader__dashboard_section_swaplink{
   background: #000;
   border: 1px solid #dbb76f;
   color: #fff;
   text-decoration: none!important;
-  padding: 1rem;
+  padding: .5rem 1rem;
   border-radius: 1rem;
   display: inline-block;
+  font-size: 12px;
 }
 #qr-reader__camera_selection{
   border: none;
   padding: 0.5rem;
   border-radius: 20px;
   margin-bottom: 5px;
+  font-size: 12px;
+}
+#qr-reader__dashboard_section_csr{
+  font-size: 12px;
 }
 #qr-shaded-region{
   /*margin: 2.3rem 0;*/
@@ -657,7 +666,7 @@ section{
   color: #dbb76f;
 }
 .history-section .container{
-  height: 100vh;
+  height: 100%;
   padding: 5rem 1rem;
 }
 .history-section ul{
